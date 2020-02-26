@@ -1,5 +1,6 @@
 import React from 'react';
-import AboutMe from './assets/components/Aboutme.js';
+import AboutMe from './assets/components/AboutMe.js';
+import Portfolio from './assets/components/Portfolio.js';
 import './App.css';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
         <AboutMe />
       </div>
       <div className='portfolio'>
-        PORTAFOLIO
+        <Portfolio />
       </div>
     </div>
   );

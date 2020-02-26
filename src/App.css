@@ -8,7 +8,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 400px
+  grid-template-rows: 28%
     1fr;
   grid-template-areas: "aboutme"
     "portfolio"
