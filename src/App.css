@@ -17,12 +17,11 @@
 .aboutme {
   grid-area: aboutme;
   color: #3f4141;
-  background-color: white;
 }
 
 .portfolio {
   grid-area: portfolio;
-  background-color: aquamarine;
+  background-color: #c62b59;
 }
 
 @media only screen and (min-width: 600px){
