@@ -6,7 +6,7 @@ class ProjectCard extends Component {
     return <div>
       <div className="card-container card">
         <img src={this.props.image} alt="imagen-proyecto" className="image"/>
-        <div className="info-container">
+        <div id="modalOpener" className="info-container">
           <div className="info">
             <h3>
               {this.props.projectName}
