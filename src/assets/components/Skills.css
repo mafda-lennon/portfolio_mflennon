@@ -1,0 +1,15 @@
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skills {
+  margin-top: 1rem;
+  color: #3b3b3b;
+}
+
+.skills-title {
+  margin-top: 25px;
+  margin-bottom: 8px;
+}

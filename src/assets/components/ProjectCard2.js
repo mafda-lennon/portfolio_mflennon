@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ProjectCard.css';
 
-class ProjectCard extends Component {
+class ProjectCard2 extends Component {
   render() {
     return <div>
       <div className="card-container card">
@@ -16,8 +16,8 @@ class ProjectCard extends Component {
             </p>
           </div>
           <div className="btns-container">
-            <a href={this.props.btnCode} target="_blank" rel="noopener noreferrer"><button className="dialog-btn">Code</button></a>
-            <a href={this.props.btnDemo} target="_blank" rel="noopener noreferrer"><button className="dialog-btn">Demo</button></a>
+            <a href={this.props.btnGoToBehance} target="_blank" rel="noopener noreferrer"><button className="dialog-btn">Design</button></a>
+            <a href={this.props.btnGoToWeb} target="_blank" rel="noopener noreferrer"><button className="dialog-btn">Web</button></a>
           </div>
         </div>
       </div>
@@ -25,4 +25,4 @@ class ProjectCard extends Component {
   }
 }
 
-export default ProjectCard;
+export default ProjectCard2;

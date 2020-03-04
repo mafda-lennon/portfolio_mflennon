@@ -1,6 +1,5 @@
 import React from 'react';
 import AboutMe from './assets/components/AboutMe.js';
-import Modal from './assets/components/Modal.js';
 import Portfolio from './assets/components/Portfolio.js';
 import './App.css';
 
@@ -13,7 +12,6 @@ function App() {
       <div className='portfolio'>
         <Portfolio />
       </div>
-      <Modal />
     </div>
   );
 }

@@ -1,28 +1,17 @@
 .portfolio-container {
   display: grid;
   grid-template-columns: 100%;
-  /* grid-template-rows: repeat(9, 400px); */
   grid-template-areas: "proj"
-    "proj"
-    "proj"
-    "proj"
-    "proj"
-    "proj"
     "proj"
     "proj"
     "proj";
 }
 
-/* .card-grid {
-  grid-area: proj;
-} */
-
 @media only screen and (min-width: 600px){
   .portfolio-container {
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(3, 33%);
+    grid-template-rows: repeat(2, 50%);
     grid-template-areas: "proj proj"
-    "proj proj"
     "proj proj";
   }
 }

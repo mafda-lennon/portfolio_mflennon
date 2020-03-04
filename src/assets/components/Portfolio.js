@@ -1,20 +1,29 @@
 import React, { Component } from 'react'
 import ProjectCard from './ProjectCard.js';
+import ProjectCard2 from './ProjectCard2.js';
 import './Portfolio.css';
 import bojack from '../../images/bojack.jpg';
-import Modal from './Modal.js'
 
 class Portfolio extends Component {
   render() {
-    return <div className="portfolio-container">
-      <ProjectCard projectName="Laborum" projectType="WEB APP" image={bojack}/>
-      <ProjectCard projectName="Burger Queen" projectType="PWA" image={bojack}/>
-      <ProjectCard projectName="Data Lovers" projectType="WEB DEV" image={bojack}/>
-      <ProjectCard projectName="Tic Tac Toe" projectType="PWA" image={bojack}/>
-      <ProjectCard projectName="Transbank" projectType="WEB DESIGN" image={bojack}/>
-      <ProjectCard projectName="Fundación Itaú" projectType="WEB DESIGN" image={bojack}/>
-      <Modal projectName="Laborum" info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas lectus lacus, non cursus lorem efficitur sed. Sed id pretium diam. Aliquam suscipit vel turpis ac venenatis. Nullam pellentesque felis magna, lacinia tincidunt justo iaculis ac. Proin eget lobortis dui. Nunc felis purus, tempus id rutrum et, mollis nec dolor. Donec id convallis leo. In congue metus a pellentesque dignissim. Ut eu laoreet mi, eu tempus ex. Suspendisse ornare ligula in mi dignissim, vel tristique libero imperdiet. Etiam vehicula tincidunt sagittis. Vivamus nisi nibh, tincidunt sed dignissim in, imperdiet sit amet dui. Cras sed egestas dolor. Duis gravida odio commodo orci venenatis pellentesque. Aenean eu nisl lectus. Donec eu nisi ut libero volutpat vulputate. Aliquam est sem, efficitur non ante et, lobortis cursus mauris. Pellentesque malesuada pretium metus vel fringilla."
-        btnCode="https://github.com/mafda-lennon/SCL011-Laborum-Postulante" btnDemo="https://laborum-postulante.firebaseapp.com/" />
+    return <div>
+      <div className="portfolio-container">
+        <ProjectCard projectName="Burger Queen" projectInfo="Progressive Web App que agiliza desde el pedido de comanda hasta la organización en cocina dentro de un restaurant. Con integración de Firebase." image={bojack}
+          btnCode="https://github.com/mafda-lennon/SCL011-Burger-Queen"
+          btnDemo="https://burger-6d85a.firebaseapp.com/" />
+
+        <ProjectCard projectName="Cultívate" projectInfo="Red social enfocada en crear comunidad en torno a la horticultura y la autosustentabilidad. Con integración de Firebase para registrar usuarios." image={bojack}
+          btnCode="https://github.com/mafda-lennon/SCL011-Social-Network"
+          btnDemo="https://camila-61ade.firebaseapp.com/" />
+
+        <ProjectCard2 projectName="Transbank" projectInfo="Diseño sitio web de Transbank durante el año 2016 para Agencia People&Chess. Maquetación, diseño de iconografía y revestimiento del sitio." image={bojack}
+          btnGoToBehance="https://www.behance.net/gallery/93211739/Transbank" 
+          btnGoToWeb="https://publico.transbank.cl/"/>
+
+        <ProjectCard2 projectName="Fundación Itaú" projectInfo="Diseño sitio web de Fundación Itaú durante el año 2018 para Agencia People&Chess. Maquetación, diseño de iconografía y revestimiento del sitio." image={bojack}
+          btnGoToBehance="https://www.behance.net/gallery/75029205/Fundacion-Itau"
+          btnGoToWeb="https://www.fundacionitau.cl/"/>
+      </div>
     </div>
   }
 }

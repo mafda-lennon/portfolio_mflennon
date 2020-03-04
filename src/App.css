@@ -8,7 +8,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 28%
+  grid-template-rows: 36%
     1fr;
   grid-template-areas: "aboutme"
     "portfolio"
@@ -26,7 +26,15 @@
 
 @media only screen and (min-width: 600px){
   .main {
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 64%;
+    grid-template-rows: 100%;
+    grid-template-areas: "aboutme portfolio"
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  .main {
+    grid-template-columns: 50% 72%;
     grid-template-rows: 100%;
     grid-template-areas: "aboutme portfolio"
   }
