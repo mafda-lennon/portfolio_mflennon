@@ -1,6 +1,7 @@
 .card-container {
   position: relative;
   height: 306px;
+  background-color: #c62b59;
 }
 
 .image {
